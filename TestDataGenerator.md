@@ -6,6 +6,9 @@ Docker image to generate test data that is align to TPC-DS schema. Below are det
 docker build -t dsgen .
 docker run --rm -v <<Data Location>>:/data/tpcds dsgen "dsdgen -SCALE 1 -DIR /data/tpcds -VERBOSE -TERMINATE N"
 ```
+![Image](dsgen_sample.jpg)
+![Image](dsgen_sample_files.jpg)
+
 
 ## TPC-DS Overview
 
