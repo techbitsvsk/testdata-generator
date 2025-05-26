@@ -1,7 +1,7 @@
 # Use Red Hat Universal Base Image 8
 FROM registry.access.redhat.com/ubi8/ubi:latest
 
-LABEL maintainer="sravan.vadaga@barclays.com"
+LABEL maintainer="sravan.vadaga@xyz.com"
 LABEL description="Docker image with TPC-DS tools (dsdgen, dsqgen) compiled on UBI 8."
 
 # --- Environment Variables ---
@@ -38,11 +38,6 @@ WORKDIR ${TPC_DS_TOOLS_DIR}
 # Apply dos2unix to source files just in case.
 RUN find . -type f \( -name "*.c" -o -name "*.h" -o -name "*.y" -o -name "*.l" -o -name "Makefile*" \) -exec dos2unix {} \;
 
-# Compile the tools.
-# Common target is just 'make'. Some versions might have 'make OS=LINUX'
-# Or you might need to copy a makefile.suite for your OS (e.g., cp makefile.suite makefile)
-# The default makefile often includes targets for dsdgen and dsqgen.
-#RUN make -f Makefile.suite OS=LINUX
 
 # --- Setup Environment for TPC-DS Tools ---
 ENV PATH="${TPC_DS_TOOLS_DIR}:${PATH}"
@@ -50,13 +45,6 @@ ENV PATH="${TPC_DS_TOOLS_DIR}:${PATH}"
 # Create a default directory for data generation output
 ENV TPCDS_DATA_DIR=/data/tpcds
 RUN mkdir -p ${TPCDS_DATA_DIR}
-
-# --- Entrypoint/CMD ---
-# You can set an entrypoint to simplify running dsdgen or dsqgen.
-# This example will just output help if no command is given.
-# To generate data, you would run:
-# docker run -v /your/host/output/path:${TPCDS_DATA_DIR} tpcds-ubi8 dsdgen -SCALE_FACTOR 1 -DIR ${TPCDS_DATA_DIR}
-# (Assuming you named the image 'tpcds-ubi8')
 
 WORKDIR ${TPC_DS_TOOLS_DIR}
 ENTRYPOINT ["/bin/bash", "-c"]
