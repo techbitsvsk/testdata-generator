@@ -1,0 +1,9 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "inv_date_sk", "type": "integer", "nullable": true },
+    { "name": "inv_item_sk", "type": "integer", "nullable": true },
+    { "name": "inv_warehouse_sk", "type": "integer", "nullable": true },
+    { "name": "inv_quantity_on_hand", "type": "integer", "nullable": true }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "p_promotion_sk", "type": "integer", "nullable": false },
+    { "name": "p_promotion_id", "type": "string", "nullable": false },
+    { "name": "p_start_date_sk", "type": "integer", "nullable": true },
+    { "name": "p_end_date_sk", "type": "integer", "nullable": true },
+    { "name": "p_item_sk", "type": "integer", "nullable": true },
+    { "name": "p_cost", "type": "decimal(15,2)", "nullable": true },
+    { "name": "p_response_target", "type": "decimal(15,2)", "nullable": true },
+    { "name": "p_promotion_type", "type": "string", "nullable": true },
+    { "name": "p_promotion_name", "type": "string", "nullable": true },
+    { "name": "p_channel_dmail", "type": "string", "nullable": true },
+    { "name": "p_channel_email", "type": "string", "nullable": true },
+    { "name": "p_channel_catalog", "type": "string", "nullable": true },
+    { "name": "p_channel_tv", "type": "string", "nullable": true },
+    { "name": "p_channel_radio", "type": "string", "nullable": true },
+    { "name": "p_channel_press", "type": "string", "nullable": true },
+    { "name": "p_channel_event", "type": "string", "nullable": true },
+    { "name": "p_channel_demo", "type": "string", "nullable": true },
+    { "name": "p_channel_detail", "type": "string", "nullable": true }
+  ]
+}

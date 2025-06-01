@@ -1,0 +1,9 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "ib_income_band_sk", "type": "integer", "nullable": false },
+    { "name": "ib_income_band_id", "type": "string", "nullable": false },
+    { "name": "ib_lower_bound", "type": "decimal(7,2)", "nullable": true },
+    { "name": "ib_upper_bound", "type": "decimal(7,2)", "nullable": true }
+  ]
+}

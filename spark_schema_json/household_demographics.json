@@ -1,0 +1,14 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "hd_demo_sk", "type": "integer", "nullable": false },
+    { "name": "hd_income_band_sk", "type": "integer", "nullable": true },
+    { "name": "hd_buy_potential", "type": "string", "nullable": true },
+    { "name": "hd_dep_count", "type": "integer", "nullable": true },
+    { "name": "hd_vehicle_count", "type": "integer", "nullable": true },
+    { "name": "hd_own_rent", "type": "string", "nullable": true },
+    { "name": "hd_houseowner_flag", "type": "string", "nullable": true },
+    { "name": "hd_household_status", "type": "string", "nullable": true },
+    { "name": "hd_household_size", "type": "integer", "nullable": true }
+  ]
+}

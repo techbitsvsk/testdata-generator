@@ -1,0 +1,14 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "cd_demo_sk", "type": "integer", "nullable": false },
+    { "name": "cd_gender", "type": "string", "nullable": true },
+    { "name": "cd_marital_status", "type": "string", "nullable": true },
+    { "name": "cd_education_status", "type": "string", "nullable": true },
+    { "name": "cd_purchase_estimate", "type": "integer", "nullable": true },
+    { "name": "cd_credit_rating", "type": "string", "nullable": true },
+    { "name": "cd_dep_count", "type": "integer", "nullable": true },
+    { "name": "cd_dep_employed_count", "type": "integer", "nullable": true },
+    { "name": "cd_dep_college_count", "type": "integer", "nullable": true }
+  ]
+}

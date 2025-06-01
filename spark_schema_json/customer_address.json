@@ -1,0 +1,18 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "ca_address_sk", "type": "integer", "nullable": false },
+    { "name": "ca_address_id", "type": "string", "nullable": false },
+    { "name": "ca_street_number", "type": "string", "nullable": true },
+    { "name": "ca_street_name", "type": "string", "nullable": true },
+    { "name": "ca_street_type", "type": "string", "nullable": true },
+    { "name": "ca_suite_number", "type": "string", "nullable": true },
+    { "name": "ca_city", "type": "string", "nullable": true },
+    { "name": "ca_county", "type": "string", "nullable": true },
+    { "name": "ca_state", "type": "string", "nullable": true },
+    { "name": "ca_zip", "type": "string", "nullable": true },
+    { "name": "ca_country", "type": "string", "nullable": true },
+    { "name": "ca_gmt_offset", "type": "decimal(5,2)", "nullable": true },
+    { "name": "ca_location_type", "type": "string", "nullable": true }
+  ]
+}

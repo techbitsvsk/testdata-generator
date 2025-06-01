@@ -1,0 +1,19 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "t_time_sk", "type": "integer", "nullable": false },
+    { "name": "t_time_id", "type": "string", "nullable": false },
+    { "name": "t_time", "type": "string", "nullable": true },
+    { "name": "t_hour", "type": "integer", "nullable": true },
+    { "name": "t_minute", "type": "integer", "nullable": true },
+    { "name": "t_second", "type": "integer", "nullable": true },
+    { "name": "t_am_pm", "type": "string", "nullable": true },
+    { "name": "t_shift", "type": "string", "nullable": true },
+    { "name": "t_sub_shift", "type": "string", "nullable": true },
+    { "name": "t_weekday_name", "type": "string", "nullable": true },
+    { "name": "t_day_name", "type": "string", "nullable": true },
+    { "name": "t_month_name", "type": "string", "nullable": true },
+    { "name": "t_quarter_name", "type": "string", "nullable": true },
+    { "name": "t_week_day", "type": "integer", "nullable": true }
+  ]
+}

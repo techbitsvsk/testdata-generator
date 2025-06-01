@@ -1,0 +1,23 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "c_customer_sk", "type": "integer", "nullable": false },
+    { "name": "c_customer_id", "type": "string", "nullable": false },
+    { "name": "c_current_cdemo_sk", "type": "integer", "nullable": true },
+    { "name": "c_current_hdemo_sk", "type": "integer", "nullable": true },
+    { "name": "c_current_addr_sk", "type": "integer", "nullable": true },
+    { "name": "c_first_shipto_date_sk", "type": "integer", "nullable": true },
+    { "name": "c_first_sales_date_sk", "type": "integer", "nullable": true },
+    { "name": "c_salutation", "type": "string", "nullable": true },
+    { "name": "c_first_name", "type": "string", "nullable": true },
+    { "name": "c_last_name", "type": "string", "nullable": true },
+    { "name": "c_preferred_cust_flag", "type": "string", "nullable": true },
+    { "name": "c_birth_day", "type": "integer", "nullable": true },
+    { "name": "c_birth_month", "type": "integer", "nullable": true },
+    { "name": "c_birth_year", "type": "integer", "nullable": true },
+    { "name": "c_birth_country", "type": "string", "nullable": true },
+    { "name": "c_login", "type": "string", "nullable": true },
+    { "name": "c_email_address", "type": "string", "nullable": true },
+    { "name": "c_last_review_date", "type": "string", "nullable": true }
+  ]
+}

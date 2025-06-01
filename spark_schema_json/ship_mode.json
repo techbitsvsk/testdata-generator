@@ -1,0 +1,9 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "sm_ship_mode_sk", "type": "integer", "nullable": false },
+    { "name": "sm_ship_mode_id", "type": "string", "nullable": false },
+    { "name": "sm_description", "type": "string", "nullable": true },
+    { "name": "sm_type", "type": "string", "nullable": true }
+  ]
+}

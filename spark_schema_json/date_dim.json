@@ -1,0 +1,19 @@
+{
+  "type": "struct",
+  "fields": [
+    { "name": "d_date_sk", "type": "integer", "nullable": false },
+    { "name": "d_date_id", "type": "string", "nullable": false },
+    { "name": "d_date", "type": "date", "nullable": true },
+    { "name": "d_month_seq", "type": "integer", "nullable": true },
+    { "name": "d_week_seq", "type": "integer", "nullable": true },
+    { "name": "d_quarter_seq", "type": "integer", "nullable": true },
+    { "name": "d_year", "type": "integer", "nullable": true },
+    { "name": "d_year_month", "type": "string", "nullable": true },
+    { "name": "d_month", "type": "integer", "nullable": true },
+    { "name": "d_weekday", "type": "string", "nullable": true },
+    { "name": "d_day", "type": "integer", "nullable": true },
+    { "name": "d_sales_county", "type": "string", "nullable": true },
+    { "name": "d_event_name", "type": "string", "nullable": true },
+    { "name": "d_event_type", "type": "string", "nullable": true }
+  ]
+}
